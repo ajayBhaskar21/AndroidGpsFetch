@@ -38,8 +38,8 @@ public class GpsFragment extends Fragment {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity());
 
-        // Set click listener to fetch location when the user taps the TextView
-        binding.textGps.setOnClickListener(v -> getCurrentLocation());
+        // Set click listener on the Button instead of the TextView
+        binding.btnGetLocation.setOnClickListener(v -> getCurrentLocation());
 
         return root;
     }
@@ -90,8 +90,6 @@ public class GpsFragment extends Fragment {
             }
         }).start();
     }
-
-
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,

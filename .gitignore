@@ -1,0 +1,53 @@
+# Ignore Android Studio files
+.idea/
+*.iml
+*.hprof
+
+# Ignore build output
+/build/
+*/build/
+*/bin/
+
+# Ignore Gradle files
+.gradle/
+local.properties
+/.cxx/
+*.log
+
+# Ignore signing files
+/signing/
+*.keystore
+*.jks
+
+# Ignore dependency caches
+/.gradle/
+/.cxx/
+*.lock
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore APKs and generated files
+*.apk
+*.ap_
+*.aab
+
+# Ignore NDK and intermediate files
+/captures/
+/outputs/
+/intermediates/
+
+# Ignore generated JSON and XML
+fabric.properties
+*.json
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Ignore Kotlin/Java compiled files
+*.class
+*.dex
+
+# Ignore crash reports
+crashlytics-build.properties
